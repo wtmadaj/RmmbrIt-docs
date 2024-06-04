@@ -1,0 +1,16 @@
+.side-bar {
+  width: calc((100% - 75rem) / 2 + 16.5rem);
+}
+
+.dark-mode-toggle {
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.btn.js-toggle-dark-mode {
+  margin: 0 auto;
+}
+
+.label-brown:not(g) {
+  background-color: #695154;
+}

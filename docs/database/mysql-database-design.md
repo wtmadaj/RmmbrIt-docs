@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Database Design
+title: MySQL Database Design
 parent: Database
 nav_order: 2
 ---
 
-# Database Design
+# Database Design | MySQL
 {: .no_toc }
 
 <details open markdown="block">

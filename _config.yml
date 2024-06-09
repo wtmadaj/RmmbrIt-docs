@@ -9,3 +9,16 @@ url: https://wtmadaj.github.io/rmmbrit-docs
 
 search:
     button: true
+
+#callouts:
+#  note:
+#    title: Note
+#  warning:
+#    title: Warning
+#    color: red
+#  danger:
+#    title: Danger
+#  tip:
+#    title: Tip
+#  info:
+#    title: Info

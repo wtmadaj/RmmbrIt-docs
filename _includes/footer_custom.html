@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+	<div class="theme-toggle">
+		<button class="btn js-toggle-dark-mode" id="theme-toggle-btn">
+			<i class="fas fa-moon"></i>
+		</button>
+	</div>
+
+	<script>
+      const theme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', theme);
+
+      const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
+
+      function setToggleTheme(theme) {
+          const icon = toggleDarkMode.querySelector('i');
+          jtd.setTheme(theme);
+          if (theme === 'dark') {
+              icon.classList.remove('fa-moon');
+              icon.classList.add('fa-sun');
+          } else {
+              icon.classList.remove('fa-sun');
+              icon.classList.add('fa-moon');
+          }
+      }
+
+      setToggleTheme(theme);
+
+      toggleDarkMode.addEventListener('click', function(){
+          const currentTheme = document.documentElement.getAttribute('data-theme');
+          const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+          document.documentElement.setAttribute('data-theme', newTheme);
+          localStorage.setItem('theme', newTheme);
+          setToggleTheme(newTheme);
+
+					if (newTheme === 'dark') {
+							document.querySelectorAll('.note').forEach(function(element) {
+									element.classList.add('dark');
+							});
+					} else {
+							document.querySelectorAll('.note').forEach(function(element) {
+									element.classList.remove('dark');
+							});
+					}
+			});
+	</script>

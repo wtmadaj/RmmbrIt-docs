@@ -1,54 +1,54 @@
 
-<div class="dark-mode-toggle">
-	<button class="btn js-toggle-dark-mode">Dark Mode</button>
-</div>
+<!--<div class="dark-mode-toggle">-->
+<!--	<button class="btn js-toggle-dark-mode">Dark Mode</button>-->
+<!--</div>-->
 
 
-<script>
-    const theme = localStorage.getItem('theme') || 'light';
-    document.documentElement.setAttribute('data-theme', theme);
-    const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');
+<!--<script>-->
+<!--    const theme = localStorage.getItem('theme') || 'light';-->
+<!--    document.documentElement.setAttribute('data-theme', theme);-->
+<!--    const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');-->
 
-    const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
+<!--    const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');-->
 
-    if (theme === "dark") {
-        setToggleTheme('dark');
-    } else if (theme === "light") {
-        setToggleTheme('light');
-    } else if (userPrefers === "dark") {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        window.localStorage.setItem('theme', 'dark');
-        setToggleTheme('dark');
-    } else {
-        document.documentElement.setAttribute('data-theme', 'light');
-        window.localStorage.setItem('theme', 'light');
-        setToggleTheme('light');
-    }
+<!--    if (theme === "dark") {-->
+<!--        setToggleTheme('dark');-->
+<!--    } else if (theme === "light") {-->
+<!--        setToggleTheme('light');-->
+<!--    } else if (userPrefers === "dark") {-->
+<!--        document.documentElement.setAttribute('data-theme', 'dark');-->
+<!--        window.localStorage.setItem('theme', 'dark');-->
+<!--        setToggleTheme('dark');-->
+<!--    } else {-->
+<!--        document.documentElement.setAttribute('data-theme', 'light');-->
+<!--        window.localStorage.setItem('theme', 'light');-->
+<!--        setToggleTheme('light');-->
+<!--    }-->
 
-    jtd.addEvent(toggleDarkMode, 'click', function(){
-        const currentTheme = jtd.getTheme();
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+<!--    jtd.addEvent(toggleDarkMode, 'click', function(){-->
+<!--        const currentTheme = jtd.getTheme();-->
+<!--        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';-->
 
-        jtd.setTheme(newTheme);
-        localStorage.setItem('theme', newTheme);
-        setToggleTheme(newTheme);
-        if (newTheme === 'dark') {
-            document.querySelectorAll('.note').forEach(function(element) {
-                element.classList.add('dark');
-            });
-        } else {
-            document.querySelectorAll('.note').forEach(function(element) {
-                element.classList.remove('dark');
-            });
-        }
-    });
+<!--        jtd.setTheme(newTheme);-->
+<!--        localStorage.setItem('theme', newTheme);-->
+<!--        setToggleTheme(newTheme);-->
+<!--        if (newTheme === 'dark') {-->
+<!--            document.querySelectorAll('.note').forEach(function(element) {-->
+<!--                element.classList.add('dark');-->
+<!--            });-->
+<!--        } else {-->
+<!--            document.querySelectorAll('.note').forEach(function(element) {-->
+<!--                element.classList.remove('dark');-->
+<!--            });-->
+<!--        }-->
+<!--    });-->
 
-    function setToggleTheme(theme) {
-        jtd.setTheme(theme);
-        if (theme === 'dark') {
-            toggleDarkMode.textContent = 'Light Mode';
-        } else {
-            toggleDarkMode.textContent = 'Dark Mode';
-        }
-    }
-</script>
+<!--    function setToggleTheme(theme) {-->
+<!--        jtd.setTheme(theme);-->
+<!--        if (theme === 'dark') {-->
+<!--            toggleDarkMode.textContent = 'Light Mode';-->
+<!--        } else {-->
+<!--            toggleDarkMode.textContent = 'Dark Mode';-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->

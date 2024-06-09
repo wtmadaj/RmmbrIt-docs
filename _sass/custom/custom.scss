@@ -29,14 +29,11 @@ p.note::before, blockquote.note::before {
   padding-bottom: 0.125rem;
 }
 
-//set for the dark theme
-[data-theme="dark"] {
-  p.note, blockquote.note{
-    background: rgba(143, 116, 237, 0.2);
-    border-left: 4px solid #75688e;
-  }
+p.note.dark, blockquote.note{
+  background: rgba(143, 116, 237, 0.2);
+  border-left: 4px solid #75688e;
+}
 
-  p.note::before, blockquote.note::before {
-    color: #a176f4;
-  }
+p.note.dark::before, blockquote.note::before {
+  color: #a176f4;
 }

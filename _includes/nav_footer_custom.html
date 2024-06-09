@@ -32,6 +32,15 @@
         jtd.setTheme(newTheme);
         localStorage.setItem('theme', newTheme);
         setToggleTheme(newTheme);
+        if (newTheme === 'dark') {
+            document.querySelectorAll('.note').forEach(function(element) {
+                element.classList.add('dark');
+            });
+        } else {
+            document.querySelectorAll('.note').forEach(function(element) {
+                element.classList.remove('dark');
+            });
+        }
     });
 
     function setToggleTheme(theme) {

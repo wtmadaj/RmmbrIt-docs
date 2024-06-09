@@ -35,10 +35,13 @@
           setToggleTheme(newTheme);
 
 					if (newTheme === 'dark') {
+
+							document.querySelector('.js-toggle-dark-mode').classList.add('dark');
 							document.querySelectorAll('.note').forEach(function(element) {
 									element.classList.add('dark');
 							});
 					} else {
+							document.querySelector('.js-toggle-dark-mode').classList.remove('dark');
 							document.querySelectorAll('.note').forEach(function(element) {
 									element.classList.remove('dark');
 							});

@@ -11,6 +11,9 @@
   align-items: center;
   justify-content: center;
 }
+.btn.js-toggle-dark-mode.dark {
+  border: 1px solid rgba(44, 132, 250, 0.3);
+}
 
 .label-brown:not(g) {
   background-color: #695154;

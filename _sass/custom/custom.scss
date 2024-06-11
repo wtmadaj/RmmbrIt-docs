@@ -11,9 +11,6 @@
   align-items: center;
   justify-content: center;
 }
-.btn.js-toggle-dark-mode.dark {
-  border: 1px solid rgba(44, 132, 250, 0.3);
-}
 
 .label-brown:not(g) {
   background-color: #695154;
@@ -37,23 +34,26 @@ p.note::before, blockquote.note::before {
   padding-bottom: 0.125rem;
 }
 
-p.note.dark, blockquote.note.dark{
-  background: rgba(143, 116, 237, 0.2);
-  border-left: 4px solid #75688e;
-}
-
-p.note.dark::before, blockquote.note.dark::before {
-  color: #a176f4;
-}
-
-//set for the dark theme
-//[data-theme="dark"] {
-//  p.note, blockquote.note{
-//    background: rgba(143, 116, 237, 0.2);
-//    border-left: 4px solid #75688e;
-//  }
-//
-//  p.note::before, blockquote.note::before {
-//    color: #a176f4;
+//more testing needed on this
+//@media (min-width: 66.5rem) {
+//  .side-bar {
+//    width: 25rem;
+//    min-width: 16.5rem;
 //  }
 //}
+
+//set for the dark theme
+[data-theme="dark"] {
+  .btn.js-toggle-dark-mode {
+    border: 1px solid rgba(44, 132, 250, 0.3);
+  }
+
+  p.note, blockquote.note{
+    background: rgba(143, 116, 237, 0.2);
+    border-left: 4px solid #75688e;
+  }
+
+  p.note::before, blockquote.note::before {
+    color: #a176f4;
+  }
+}

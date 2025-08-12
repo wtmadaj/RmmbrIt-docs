@@ -3,19 +3,18 @@ GEM
   specs:
     addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
+    base64 (0.1.2)
+    bigdecimal (3.1.9)
     colorator (1.1.0)
     concurrent-ruby (1.2.3)
+    csv (3.2.9)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
     ffi (1.16.3)
     forwardable-extended (2.6.0)
-    google-protobuf (4.26.1-arm64-darwin)
-      rake (>= 13)
-    google-protobuf (4.26.1-x86_64-darwin)
-      rake (>= 13)
-    google-protobuf (4.26.1-x86_64-linux)
+    google-protobuf (4.26.1)
       rake (>= 13)
     http_parser.rb (0.8.0)
     i18n (1.14.4)
@@ -82,9 +81,13 @@ GEM
 PLATFORMS
   arm64-darwin
   x86_64-darwin-22
+  x86_64-darwin-23
   x86_64-linux-gnu
 
 DEPENDENCIES
+  base64 (~> 0.1.0)
+  bigdecimal (~> 3.1.0)
+  csv (~> 3.2.0)
   jekyll (~> 4.3.3)
   just-the-docs (= 0.8.2)
 

@@ -7,5 +7,5 @@ gem "just-the-docs", "0.10.1" # pinned to the current release
 # gem "just-the-docs"        # always download the latest release
 
 gem "csv", "~> 3.2.0"
-gem "base64", "~> 0.1.0"
+gem "base64", "~> 0.3.0"
 gem "bigdecimal", "~> 3.1.0"

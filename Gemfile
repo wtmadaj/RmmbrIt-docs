@@ -6,6 +6,6 @@ gem "jekyll", "~> 4.3.4" # installed by `gem jekyll`
 gem "just-the-docs", "0.10.1" # pinned to the current release
 # gem "just-the-docs"        # always download the latest release
 
-gem "csv", "~> 3.2.0"
+gem "csv", "~> 3.3.5"
 gem "base64", "~> 0.3.0"
 gem "bigdecimal", "~> 3.1.0"
